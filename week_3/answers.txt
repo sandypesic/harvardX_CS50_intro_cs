@@ -1,0 +1,14 @@
+Selection sort:
+    Runtime = O(n^2) in all cases.
+    Already-sorted input takes just as long as random input.
+    Always scans the entire unsorted portion.
+
+Bubble sort:
+    Runtime = O(n^2) in worst case but O(n) in best case.
+    Already-sorted input runs much faster than random or reversed input.
+    Swaps adjacent elements.
+
+Merge sort:
+    Runtime = O(n log n) in all cases.
+    Runs much faster than the other two algorithms.
+    Recursively divides and conquers.
