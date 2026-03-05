@@ -1,0 +1,2 @@
+1. Calculate average energy, valence, and danceability and interpret the combined profile.
+2. Variation is not represented, outliers distort results, and frequency isn't weighted.
