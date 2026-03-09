@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Part 1: Multiple Choice
+                const buttons = document.querySelectorAll('.choice');
+                const mcFeedback = document.querySelector('#mc-feedback');
+
+                buttons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        if (button.dataset.correct === 'true') {
+                            button.style.backgroundColor = 'green';
+                            mcFeedback.textContent = 'Correct!';
+                            mcFeedback.style.color = 'green';
+                        } else {
+                            button.style.backgroundColor = 'red';
+                            mcFeedback.textContent = 'Incorrect';
+                            mcFeedback.style.color = 'red';
+                        }
+                    });
+                });
+
+                // Part 2: Free Response
+                const input = document.querySelector('#fr-input');
+                const confirm = document.querySelector('#fr-confirm');
+                const frFeedback = document.querySelector('#fr-feedback');
+
+                confirm.addEventListener('click', function() {
+                    if (input.value.trim().toLowerCase() === 'tcp/ip') {
+                        input.style.backgroundColor = 'green';
+                        frFeedback.textContent = 'Correct!';
+                        frFeedback.style.color = 'green';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        frFeedback.textContent = 'Incorrect';
+                        frFeedback.style.color = 'red';
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+                <h3>Which HTTP status code means a page has been permanently moved to a new URL?</h3>
+                <button class="choice" data-correct="false">200</button>
+                <button class="choice" data-correct="true">301</button>
+                <button class="choice" data-correct="false">404</button>
+                <button class="choice" data-correct="false">500</button>
+                <p id="mc-feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What pair of protocols work together to break data into packets, route them across the internet, and guarantee delivery?</h3>
+                <input id="fr-input" type="text" placeholder="Your answer here">
+                <button id="fr-confirm">Confirm</button>
+                <p id="fr-feedback"></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+HTML TAGS (10 distinct tags)
+1.  <nav>       Navigation bar linking all pages
+2.  <a>         Hyperlinks in the navbar and contact page
+3.  <h1>        Page titles
+4.  <h2>        Section headings on the projects page
+5.  <p>         Paragraph text on every page
+6.  <ul>        Unordered list on the about page
+7.  <li>        List items inside the ul on the about page
+8.  <img>       Placeholder image on the homepage
+9.  <button>    Button on the homepage that triggers JavaScript
+10. <div>       Used for the greeting output and page containers
+
+CSS SELECTORS (5 distinct selectors)
+1.  body         Sets font and padding for all pages
+2.  .navbar      Styles the navigation bar background and spacing
+3.  .navbar a    Styles the links inside the navbar
+4.  h1           Sets the color of all page titles
+5.  #greeting    Styles the JavaScript-generated greeting text
+
+CSS PROPERTIES (5 distinct properties)
+1.  font-family      Sets the font for the whole page
+2.  background-color Sets the navbar background color
+3.  color            Sets text colors for headings, links, and greeting
+4.  padding          Adds spacing inside the navbar and button
+5.  margin-bottom    Adds space below the navbar
+
+JAVASCRIPT
+A button on index.html calls a greet() function that uses innerHTML
+to display a welcome message in a div when clicked.
+
+BOOTSTRAP
+Bootstrap's container class and CSS reset are loaded via CDN on all
+four pages for basic responsive layout and consistent base styling.

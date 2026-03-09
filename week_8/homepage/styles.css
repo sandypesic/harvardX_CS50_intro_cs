@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+}
+
+#greeting {
+    color: green;
+    font-weight: bold;
+}
